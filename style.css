@@ -1,0 +1,166 @@
+/*
+Theme Name: twentyseventeen-child
+Template: twentyseventeen
+*/
+@import url("../twentyseventeen/style.css");
+
+.site-branding .site-title {    /* サイトのメインタイトル */
+    font-size: 2.1rem;
+    font-weight: 400;
+    letter-spacing: -0.1rem;    /* 文字間を少し寄せる */
+}
+
+.site-description {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.entry-content h1 {         /* 実際には「見出し1」は使用しない */
+    font-size: 1.4rem; 
+    font-weight: 400; 
+}
+    
+.entry-content h2 { 
+    font-size: 1.3rem; 
+    font-weight: 400; 
+    border-bottom: thin solid #6495ed;
+}
+
+.entry-content h3 { 
+    font-size: 1.2rem; 
+    font-weight: 400; 
+    border-left: 4px solid #6495ed;
+    padding-left: 0.5rem;
+}
+
+
+body:not(.custom-background-image)::before {
+    border-top: medium solid #1486B7;       /* サイトトップに青線 */
+}
+
+.widget {
+    border-style: none;         /* お葬式みたいな仕切り線を消す。*/
+    font-size: 1rem;            /* ウィジェット内のフォントが小さ過ぎ */
+    margin-bottom: 0.5rem;      /* ウィジェットどおしの間隔が広過ぎ */
+}
+
+.widget .widget-title {
+    border-bottom: solid thin #6495ed !important;   /* タイトルに下青線 */
+    padding-bottom: 0.4rem;                         /* 下線までの距離 */
+    margin-bottom: 0.8rem;                /* 最初のエントリーまでの距離 */
+    font-weight: 100;                   /* フォントが大きすぎるので */
+    font-size: 1rem;
+}
+
+.widget ul {
+    list-style-type: none;      /* リストのマーカーを消す */
+    margin: 0;                  /* 注意。サブカテゴリーのインデントも消える */
+    padding: 0;
+}
+
+.widget .cat-item {
+    border-bottom: 1px solid #dcdcdc;       /* カテゴリー間に線 */
+    padding: 0.3rem 0rem;       /* カテゴリー間が狭いので */
+}
+
+.widget .children .cat-item {
+    border-bottom: none;        /* 親子カテゴリーの間の線はなし */
+    padding: 0.3rem 0rem;       /* カテゴリー間が狭いので */
+}
+
+.widget .recentcomments {
+    border-bottom: 1px solid #dcdcdc;   /* コメントの間に線 */
+    padding: 0.5rem 0rem;               /* コメントと線の間 */
+    line-height: 125%;                  /* 行間を狭める */
+}
+
+
+.post-navigation,
+.post-navigation .post-title,
+.post-navigation div + div {
+    border-style: none;     /* お葬式みたいな線を潰す */
+    font-size: 1.0rem;      /* 前や次が小さいのでまとめて同じ大きさに */
+    font-weight: 400;
+}
+
+div.nav-next {
+    text-align: right;                      /* 「次」は右寄せ */
+}
+
+.post-navigation a,
+.post-navigation .meta-nav {
+    padding: 0rem;                          /* 行間をつぶして狭く */
+    line-height: 1;
+    margin: 0rem;
+}
+
+nav.navigation {
+    border-top: medium solid #6495ed;       /* 領域の上下に青線 */
+    border-bottom: thin solid #6495ed;
+    padding: 0.5rem 0;                      /* 線との距離 */
+}
+
+.entry-title {
+    font-size: 1.4rem;
+    font-weight: 400;                   /* 少し軽くする。元は700 */
+    padding-top: 1rem;
+    border-bottom: thin solid #6495ed;  /* 青い下線 */
+    padding-bottom: 0.5rem;             /* 青下線とタイトルの間の距離 */
+    margin-bottom: 0.5rem;              /* 青下線の下の距離 */
+}
+
+body:not(.search-results) article:not(.type-page) .entry-content {
+    width: 77%;                         /* 本文の幅 */
+}
+
+body:not(.search-results) .cat-links, 
+body:not(.search-results) .tags-links, 
+body:not(.search-results) article:not(.sticky) .posted-on {
+    display: inline;    /* カテゴリー等をタイトル下に一行に並べたいので */
+}
+.entry-footer-home {
+    font-size: 1.0rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;      /* エントリーの日付やカテゴリーと本文の間 */
+}
+
+.entry-footer-home .posted-on,
+.entry-footer-home .cat-links {
+    margin-right: 0.5rem;       /* 日付とカテゴリーの間 */
+}
+
+.updated:not(.published) {
+    display: inline;            /* 更新日。hide されているので表示する */
+}
+
+.post-category {                /* タイトル下のカテゴリーは青色丸四角で囲む */
+    padding: 0.1rem 0.4rem;
+    border: thin solid #6495ed;
+    border-radius: 0.3rem;
+    color: #6495ed;
+}
+
+input[type="search"] {          /* 検索ボックス */
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.search-submit::before {        /* 検索ボックスの右側の虫眼鏡アイコン */
+    font-size: 18px;            /* アイコンの大きさ */
+    line-height: 35px;          /* アイコンの上部からの距離 */
+}
+
+// powered by wordpress の文を削除
+.site-footer .site-title:after {
+content: "";
+}
+
+span.credit-link
+{
+display: none;
+}
+
+.site-info {
+  display: none;
+}
+// code by raspi-diary.wktk.so
